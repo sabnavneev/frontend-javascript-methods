@@ -5,16 +5,29 @@
 const currentDay = new Date();
 console.log(currentDay);
 
-
 /* Opdracht 1 */
 // 1a. Maak een nieuw date-object aan voor dit huidige moment en log het aantal uren in de terminal
+
+const thisDay = new Date();
+console.log(thisDay);
+console.log(thisDay.getHours());
+
+
 // 1b. Log daarna het aantal minuten in de terminal
 // ---- Verwachte uitkomsten:
 // Uren: 16 (als er een vier in de klok zit op het moment van aanroepen)
 // Minuten: 36 (als het 16:36 is op het moment van aanroepen)
 
-
+console.log(thisDay.getMinutes());
 
 /* Opdracht 2 */
 // Format het date-object dat je bij de vorige vraag hebt gemaakt naar een leesbare datum
 // ---- Verwachte uitkomst: Tue Apr 06 2021 (afhankelijk van het moment)
+
+// Methode 1
+console.log(thisDay.toDateString());
+
+// Methode 2: maak eerst nieuwe variabele aan
+const date = thisDay.toDateString();
+console.log(date);
+
